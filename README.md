@@ -13,8 +13,9 @@ Because `main` returns a value indicating the successful (or not) execution of t
 (http://stackoverflow.com/questions/204476/what-should-main-return-in-c-and-c)
 
 Simple compilation bash function:
-```c () {
+```
+c () {
   output=$1
   input="$output.c"
   gcc -o $output $input
-}```
+}
