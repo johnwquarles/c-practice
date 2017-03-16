@@ -15,7 +15,7 @@ Because `main` returns a value indicating the successful (or not) execution of t
 Simple compilation bash function:
 ```
 c () {
-  output=$1
-  input="$output.c"
+  output="$1.out"
+  input="$1.c"
   gcc -o $output $input
 }
