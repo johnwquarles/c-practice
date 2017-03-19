@@ -1,0 +1,15 @@
+Make an automated suite that tests against expected outcomes for standard use cases,
+as well as every special case I could think of.
+
+Specifically: is '\n' the only way to make a new line? If not, then use an alternative
+could lead to an inaccurate new line count. Does '\r' (carriage return) work?
+
+Could test all of the problematic strings listed here:
+https://github.com/minimaxir/big-list-of-naughty-strings
+
+Hmm, might also want to run a regular expression against the content of a word to
+ensure alphabetic content, since lone punctuation marks & numbers
+will currently be counted as words.
+
+As for input likely to uncover bugs: try any/everything
+(accented letters, non-Roman alphabet, etc.), and exotic combinations thereof.
