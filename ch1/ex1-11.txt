@@ -8,7 +8,7 @@ Could test all of the problematic strings listed here:
 https://github.com/minimaxir/big-list-of-naughty-strings
 
 Hmm, might also want to run a regular expression against the content of a word to
-ensure alphabetic content, since lone punctuation marks & numbers
+ensure alphabetic content, since lone punctuation marks & numbers (or groups of either)
 will currently be counted as words.
 
 As for input likely to uncover bugs: try any/everything
